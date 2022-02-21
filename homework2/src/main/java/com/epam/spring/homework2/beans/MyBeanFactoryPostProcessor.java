@@ -6,11 +6,11 @@ import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 
 public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
-    @Override
-    public void postProcessBeanFactory(ConfigurableListableBeanFactory configurableListableBeanFactory) throws BeansException {
 
+    @Override
+    public void postProcessBeanFactory(ConfigurableListableBeanFactory configurableListableBeanFactory)
+            throws BeansException {
         BeanDefinition bd = configurableListableBeanFactory.getBeanDefinition("beanB");
         bd.setInitMethodName("otherCustomInitMethod");
-
     }
 }

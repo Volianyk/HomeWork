@@ -2,7 +2,6 @@ package com.epam.spring.homework2.beans;
 
 public class GenericBeanTwo extends GenericBean {
 
-
     public GenericBeanTwo(String name, Integer value) {
         super(name, value);
     }
@@ -14,5 +13,4 @@ public class GenericBeanTwo extends GenericBean {
     public void customDestroyMethod() {
         System.out.println("inside customDestroyMethod()");
     }
-
 }

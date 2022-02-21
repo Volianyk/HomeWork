@@ -20,6 +20,4 @@ public class BeanA extends GenericBean implements InitializingBean, DisposableBe
     public void afterPropertiesSet() throws Exception {
         System.out.println("inside InitializingBean.afterPropertiesSet()");
     }
-
-
 }

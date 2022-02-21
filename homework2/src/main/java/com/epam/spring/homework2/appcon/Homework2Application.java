@@ -4,7 +4,6 @@ import com.epam.spring.homework2.config.BeanConfigOne;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.Import;
 
-
 @Import(BeanConfigOne.class)
 public class Homework2Application {
 
@@ -14,12 +13,7 @@ public class Homework2Application {
 
         for (String beanDefinitionName : context.getBeanDefinitionNames()) {
             System.out.println(context.getBeanDefinition(beanDefinitionName));
-
         }
         context.close();
     }
 }
-
-
-
-

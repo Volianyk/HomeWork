@@ -10,13 +10,11 @@ public class BeanConfigOne {
     @Bean
     public BeanA beanA() {
         return new BeanA("beanA", 1);
-
     }
 
     @Bean
     BeanE beanE() {
         return new BeanE("beanE", 2);
-
     }
 
     @Bean
@@ -24,13 +22,14 @@ public class BeanConfigOne {
     BeanF beanF() {
         return new BeanF("beanF", 5);
     }
+
     @Bean
-    MyBeanPostProcessor getMyBeanPostProcessor(){
-        return new MyBeanPostProcessor();}
-    @Bean
-    MyBeanFactoryPostProcessor getMyBeanFactoryPostProcessor(){
-        return new MyBeanFactoryPostProcessor();
+    MyBeanPostProcessor getMyBeanPostProcessor() {
+        return new MyBeanPostProcessor();
     }
 
+    @Bean
+    MyBeanFactoryPostProcessor getMyBeanFactoryPostProcessor() {
+        return new MyBeanFactoryPostProcessor();
+    }
 }
-
